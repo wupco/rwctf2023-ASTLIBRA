@@ -1,7 +1,7 @@
 # rwctf2023-ASTLIBRA
 
 ### Intended Solution
-1. Escape the double quote with `\"`.
+1. After the execution of the `$url = addslashes($_POST['URL']);` and the `preg_replace('/(.*)\{url\}(.*)/is', '${1}'.$url.'${2}', $zep_file);`, `\"` will finally convert to `\\"`.
 2. PHP class constructor could be a function with the same name as the class.
 3. Perform SSRF attack on MySQL Server with password using php-curl.
 
